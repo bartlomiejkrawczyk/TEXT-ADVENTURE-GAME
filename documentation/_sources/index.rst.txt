@@ -1,0 +1,27 @@
+.. Text Adventure Game documentation master file, created by
+   sphinx-quickstart on Wed Jan  6 14:39:24 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Text Adventure Game's documentation!
+===============================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Problem
+
+   readme
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Docstring
+
+   docstring/modules
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

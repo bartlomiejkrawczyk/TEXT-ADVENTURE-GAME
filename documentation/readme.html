@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Welcome to Text Adventure Game’s documentation! &mdash; Text Adventure Game 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Text Adventure Game" href="docstring/modules.html" />
+    <link rel="prev" title="Welcome to Text Adventure Game’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Text Adventure Game
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Problem</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Welcome to Text Adventure Game’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#zadanie">Zadanie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#konfiguracja">Konfiguracja</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#graj">Graj</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Docstring</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docstring/modules.html">Text Adventure Game</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Text Adventure Game</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to Text Adventure Game’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-text-adventure-game-s-documentation">
+<h1>Welcome to Text Adventure Game’s documentation!<a class="headerlink" href="#welcome-to-text-adventure-game-s-documentation" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="zadanie">
+<h1>Zadanie<a class="headerlink" href="#zadanie" title="Permalink to this headline">¶</a></h1>
+<p>Jako zadanie dostałem do zrealizowania program, który pozwala:</p>
+<p>Zrealizować program pozwalający graczowi na poruszanie się po opisanej tekstem mapie, walkę z przeciwnikami, podnoszenie przedmiotów etc. (“text adventure game”).</p>
+<p>Gracz powinien wydawać polecenia tekstowo (np. “idę na północ”, albo “go west”, czy “attack goblin”, ale też “look around”). Na mapie powinny być przedmioty niezbędne do dostania się do innych obszarów świata (“klucze”), które gracz może jakoś zdobywać (“pickup key”, “buy gem”).</p>
+<p>Mapa powinna być wczytywalna z pliku, gdzie możliwa byłaby pełna konfiguracja świata: * rodzaje lokalizacji z ich opisem tekstowym, * sąsiedztwo (graf) lokalizacji (co jest “na północ”, czy “za mostem”), * przedmioty - ich położenie i wpływ na odblokowywanie lokalizacji, * przeciwnicy i ich siła itp.</p>
+<p>Rodzaje poleceń obsługiwanych przez grę powinny umożliwiać w miarę “naturalną” interakcję ze światem, ale mogą (a nawet muszą - ze względu na złożoność języka naturalnego) być ograniczone do określonego zestawu komend.</p>
+<p>Gracz powinien móc zapisać i odtworzyć stan gry.</p>
+</div>
+<div class="section" id="konfiguracja">
+<h1>Konfiguracja<a class="headerlink" href="#konfiguracja" title="Permalink to this headline">¶</a></h1>
+<p>Aby dodać nową grę należy:</p>
+<ol class="arabic simple">
+<li><p>Stworzyć folder w folderze configuration - nazwa tego folderu będzie wykorzystana jako nazwa gry, wszystkie pliki konfiguracyjne należy umieścić w tym folderze</p></li>
+<li><p>Należy stworzyć plik player.json który będzie zawierał informację o graczu</p></li>
+</ol>
+<p>Przykładowe gracz:</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>“base_health”: 100,</p>
+<p>“health”: 100,</p>
+<p>“strength”: 10,</p>
+<p>“weapon”:{</p>
+<blockquote>
+<div><p>“class”: “Weapon”,</p>
+<p>“name”: “Wooden Sword”,</p>
+<p>“description”: “Simple sword”,</p>
+<p>“base_strength”: 1,</p>
+<p>“random_strength”: 5</p>
+</div></blockquote>
+<p>},</p>
+<p>“equipment_size”: 10,</p>
+<p>“equipment”: [
+{</p>
+<blockquote>
+<div><p>“class”: “Potion”,</p>
+<p>“name”: “Health Potion”,</p>
+<p>“description”: “”,</p>
+<p>“health”: 100</p>
+</div></blockquote>
+<p>}]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p>Należy stworzyć plik fields.json który będzie zawierał listę pól na planszy, pola mają być opisane jsonem, tutaj też do pól należy przydzielić wrogów i przedmioty które można podnosić</p>
+<blockquote>
+<div><dl>
+<dt>[</dt><dd><dl>
+<dt>{</dt><dd><p>“name”: “Dangerous Paved Road”,</p>
+<p>“description”: “A road paved with stones.nAnd what’s behind this cart?nIt’s a Mighty White Dragon”,</p>
+<p>“danger”: -10,</p>
+<dl>
+<dt>“enemy”:{</dt><dd><p>“name”: “Mighty White Dragon”,</p>
+<p>“base_health”: 200,</p>
+<p>“health”: 200,</p>
+<p>“regeneration”: 50,</p>
+<p>“strength”: 20,</p>
+<p>“random_strength”: 20,</p>
+<p>“shouts”: [“What a small little human!”, “I eat people like you for breakfast!”],</p>
+<p>“description”: “Mighty White Dragon is a guardian of the Castle”</p>
+</dd>
+</dl>
+<p>},</p>
+<p>“item”:{</p>
+<blockquote>
+<div><p>“class”: “Weapon”,</p>
+<p>“name”: “King’s Sword”,</p>
+<p>“description”: “It’s base strength is equal to 25, but random buff is 100 :o”,</p>
+<p>“base_strength”: 25,</p>
+<p>“random_strength”: 100</p>
+</div></blockquote>
+<p>},</p>
+<p>“enterable”: true,</p>
+<p>“seen”: false,</p>
+<p>“go_to”: 0</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+</li>
+<li><p>Należy stworzyć plik lvl1.txt w którym będą umieszczone indeksy pól z pliku fields.json, sąsiadujące pola mają być oddzielone tabami, całość ma mieć kształt prostokąta</p></li>
+<li><p>Aby wprowadzić gracza w historię należy stworzyć dodatkowo plik introduction.txt, zawartość tego pliku będzie wyświetlona graczowi od razu po rozpoczęciu nowej gry</p></li>
+</ol>
+</div>
+<div class="section" id="graj">
+<h1>Graj<a class="headerlink" href="#graj" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Aby zagrać należy odpalić plik main.py</p></li>
+<li><p>Dalej zostanie się poprowadzonym przez program -&gt; cały czas będą wyświetlane dostępne dla gracza komendy</p></li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="docstring/modules.html" class="btn btn-neutral float-right" title="Text Adventure Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Text Adventure Game’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Bartłomiej Krawczyk.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

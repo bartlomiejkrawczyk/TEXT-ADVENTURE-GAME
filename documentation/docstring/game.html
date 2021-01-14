@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Game &mdash; Text Adventure Game 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Location" href="location.html" />
+    <link rel="prev" title="Entities" href="entities.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Text Adventure Game
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Problem</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Welcome to Text Adventure Game’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#konfiguracja">Konfiguracja</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Docstring</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Text Adventure Game</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="entities.html">Entities</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location.html">Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">Utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Text Adventure Game</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">Text Adventure Game</a> &raquo;</li>
+        
+      <li>Game</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/docstring/game.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-game">
+<span id="game"></span><h1>Game<a class="headerlink" href="#module-game" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="game.Game">
+<em class="property">class </em><code class="sig-prename descclassname">game.</code><code class="sig-name descname">Game</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">game</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Dungeons and Dragons'</span></em>, <em class="sig-param"><span class="n">player</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span><a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player">entities.player.Player</a><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">locations</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>List<span class="p">[</span><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">location.location.Location</a><span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Game class</p>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>game</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the chosen game, defaults to ‘Dungeons and Dragons’</p></li>
+<li><p><strong>player</strong> (<a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player"><em>Player</em></a><em>, </em><em>optional</em>) – Holds information about player, defaults to None</p></li>
+<li><p><strong>locations</strong> (<em>List</em><em>[</em><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location"><em>Location</em></a><em>]</em><em>, </em><em>optional</em>) – List of locations discovered by player, defaults to None</p></li>
+<li><p><strong>level</strong> (<em>int</em><em>, </em><em>optional</em>) – The number of location where the player is now, defaults to 1</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="game.Game.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#game.Game.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Game as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with game’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#game.Game" title="game.Game">game.Game</a><a class="headerlink" href="#game.Game.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Game instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with game’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Game loaded from dictionary</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#game.Game" title="game.Game">Game</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.game">
+<code class="sig-name descname">game</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#game.Game.game" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get game</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name of the chosen game</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.set_game">
+<code class="sig-name descname">set_game</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">game</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.set_game" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set game</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>game</strong> (<em>str</em>) – Name of the chosen game</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.player">
+<code class="sig-name descname">player</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player">entities.player.Player</a><a class="headerlink" href="#game.Game.player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Information about player</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.set_player">
+<code class="sig-name descname">set_player</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span><span class="p">:</span> <span class="n"><a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player">entities.player.Player</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.set_player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="entities.html#entities.player.Player" title="entities.player.Player"><em>Player</em></a>) – Information about player</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.locations">
+<code class="sig-name descname">locations</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">location.location.Location</a><span class="p">]</span><a class="headerlink" href="#game.Game.locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get locations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of locations discovered by player</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">Location</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.set_locations">
+<code class="sig-name descname">set_locations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">locations</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">location.location.Location</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.set_locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set locations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>locations</strong> (<em>List</em><em>[</em><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location"><em>Location</em></a><em>]</em>) – List of locations discovered by player</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.level">
+<code class="sig-name descname">level</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#game.Game.level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get level</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The number of location where the player is now</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.set_level">
+<code class="sig-name descname">set_level</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.set_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set level</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>int</em>) – The number of location where the player is now</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#game.Game.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates whether to end the game or start another round</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of the exit propery</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.exit">
+<code class="sig-name descname">exit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.exit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exit the game - set exit property True</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.location">
+<code class="sig-name descname">location</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">location.location.Location</a><a class="headerlink" href="#game.Game.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get location where player currently is</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Current location</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="location.html#location.location.Location" title="location.location.Location">Location</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.add_location">
+<code class="sig-name descname">add_location</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.add_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load location from configuration directory based on filename</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – Name of loaded location</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save game state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.round">
+<code class="sig-name descname">round</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#game.Game.round" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round is a single round of the game</p>
+<p>This method is called over and over again in a loop</p>
+<p>During a round player is given set of functions he can call</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.load">
+<em class="property">static </em><code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">game</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#game.Game" title="game.Game">game.Game</a><a class="headerlink" href="#game.Game.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load Game from saves directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name of the save</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#game.Game" title="game.Game">Game</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="game.Game.available_methods">
+<code class="sig-name descname">available_methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#game.Game.available_methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the methods available now to the user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with save and exit functions</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="location.html" class="btn btn-neutral float-right" title="Location" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="entities.html" class="btn btn-neutral float-left" title="Entities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Bartłomiej Krawczyk.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

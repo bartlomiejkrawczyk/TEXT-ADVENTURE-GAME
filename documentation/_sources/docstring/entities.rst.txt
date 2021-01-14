@@ -1,0 +1,27 @@
+Entities
+================
+
+entities.enemy
+---------------------
+
+.. automodule:: entities.enemy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+entities.equipment
+-------------------------
+
+.. automodule:: entities.equipment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+entities.player
+----------------------
+
+.. automodule:: entities.player
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

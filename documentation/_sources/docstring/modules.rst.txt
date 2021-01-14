@@ -1,0 +1,12 @@
+Text Adventure Game
+===================
+
+.. toctree::
+   :maxdepth: 4
+
+   entities
+   game
+   location
+   main
+   setup
+   utils

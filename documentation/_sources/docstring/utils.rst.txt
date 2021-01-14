@@ -1,0 +1,28 @@
+Utils
+=============
+
+
+utils.format
+-------------------
+
+.. automodule:: utils.format
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.io
+---------------
+
+.. automodule:: utils.io
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.player\_input
+--------------------------
+
+.. automodule:: utils.player_input
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

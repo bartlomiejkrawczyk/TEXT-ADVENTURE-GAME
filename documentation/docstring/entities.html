@@ -1,0 +1,1574 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Entities &mdash; Text Adventure Game 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Game" href="game.html" />
+    <link rel="prev" title="Text Adventure Game" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Text Adventure Game
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Problem</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Welcome to Text Adventure Game’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html#konfiguracja">Konfiguracja</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Docstring</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Text Adventure Game</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Entities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-entities.enemy">entities.enemy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-entities.equipment">entities.equipment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-entities.player">entities.player</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="game.html">Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location.html">Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">Utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Text Adventure Game</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">Text Adventure Game</a> &raquo;</li>
+        
+      <li>Entities</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/docstring/entities.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entities">
+<h1>Entities<a class="headerlink" href="#entities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-entities.enemy">
+<span id="entities-enemy"></span><h2>entities.enemy<a class="headerlink" href="#module-entities.enemy" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="entities.enemy.EnemyNameError">
+<em class="property">exception </em><code class="sig-prename descclassname">entities.enemy.</code><code class="sig-name descname">EnemyNameError</code><a class="headerlink" href="#entities.enemy.EnemyNameError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Indicates that given Enemy’s name was empty</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Exception</strong> (<em>Exception</em>) – Enemy’s name cannot be empty</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.enemy.Enemy">
+<em class="property">class </em><code class="sig-prename descclassname">entities.enemy.</code><code class="sig-name descname">Enemy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Monster'</span></em>, <em class="sig-param"><span class="n">base_health</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">health</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">regeneration</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em>, <em class="sig-param"><span class="n">strength</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em>, <em class="sig-param"><span class="n">random_strength</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em>, <em class="sig-param"><span class="n">shouts</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>List<span class="p">[</span>str<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the enemy, defaults to ‘Monster’</p></li>
+<li><p><strong>base_health</strong> (<em>int</em><em>, </em><em>optional</em>) – Base health of the enemy, defaults to 100</p></li>
+<li><p><strong>health</strong> (<em>int</em><em>, </em><em>optional</em>) – Current health of the enemy, defaults to 100</p></li>
+<li><p><strong>regeneration</strong> (<em>int</em><em>, </em><em>optional</em>) – Amount of health enemy can regenerate at a time,
+defaults to 10</p></li>
+<li><p><strong>strength</strong> (<em>int</em><em>, </em><em>optional</em>) – Base value of damage delt to player, defaults to 10</p></li>
+<li><p><strong>random_strength</strong> (<em>int</em><em>, </em><em>optional</em>) – Random value of damage delt to player,
+defaults to 10</p></li>
+<li><p><strong>shouts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – List of texts enemy can shout before fight, defaults to None</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the enemy, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.enemy.Enemy.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.enemy.Enemy.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with enemy’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.enemy.Enemy" title="entities.enemy.Enemy">entities.enemy.Enemy</a><a class="headerlink" href="#entities.enemy.Enemy.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Enemy instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with enemy’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Loaded Enemy</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.enemy.Enemy" title="entities.enemy.Enemy">Enemy</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.name">
+<code class="sig-name descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.enemy.Enemy.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name of the enemy</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_name">
+<code class="sig-name descname">set_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set enemy’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Name of the enemy</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#entities.enemy.EnemyNameError" title="entities.enemy.EnemyNameError"><strong>EnemyNameError</strong></a> – Indicates that given name is empty</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.health">
+<code class="sig-name descname">health</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.enemy.Enemy.health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current enemy’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of enemy’s health</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_health">
+<code class="sig-name descname">set_health</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">health</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>health</strong> (<em>int</em>) – Value of enemy’s health</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – Indicates that given enemy’s health was negative</p></li>
+<li><p><strong>ValueError</strong> – Indicates that given enemy’s health was greater
+than base health</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.base_health">
+<code class="sig-name descname">base_health</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.enemy.Enemy.base_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy’s base value of health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Base value of enemy’s health</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_base_health">
+<code class="sig-name descname">set_base_health</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">base_health</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_base_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set enemy’s base health value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>base_health</strong> (<em>int</em>) – Base value of enemy’s health</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given enemy’s health was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.regeneration">
+<code class="sig-name descname">regeneration</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.enemy.Enemy.regeneration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get amount of health enemy can regenerate once a time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Amount of health</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_regeneration">
+<code class="sig-name descname">set_regeneration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">regeneration</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_regeneration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set amount of health enemy can regenerate once a time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>regeneration</strong> (<em>int</em>) – Amount of health</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given amount was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.strength">
+<code class="sig-name descname">strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.enemy.Enemy.strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy’s base amout of damage delt to player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Base enemy’s strength</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_strength">
+<code class="sig-name descname">set_strength</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">strength</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set enemy’s base amout of damage delt to player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>strength</strong> (<em>int</em>) – Base enemy’s strength</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given value was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.random_strength">
+<code class="sig-name descname">random_strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.enemy.Enemy.random_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy’s random amout of damage delt to player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Random enemy’s strength</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_random_strength">
+<code class="sig-name descname">set_random_strength</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">random_strength</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_random_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set enemy’s random amout of damage delt to player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>strength</strong> (<em>int</em>) – Random enemy’s strength</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given value was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.shouts">
+<code class="sig-name descname">shouts</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#entities.enemy.Enemy.shouts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of texts enemy can shout before fight</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of shouts</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_shouts">
+<code class="sig-name descname">set_shouts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shouts</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_shouts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set list of texts enemy can shout before fight</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>shouts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of shouts</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.description">
+<code class="sig-name descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.enemy.Enemy.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get enemy’s description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Description</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.set_description">
+<code class="sig-name descname">set_description</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set enemy’s description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>description</strong> (<em>str</em>) – Enemy’s description</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.take_damage">
+<code class="sig-name descname">take_damage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">damage</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.enemy.Enemy.take_damage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Damage enemy by given amount</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>damage</strong> (<em>int</em>) – Amount of damage</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given damage was negative</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Whether enemy is alive</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.is_alive">
+<code class="sig-name descname">is_alive</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.enemy.Enemy.is_alive" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Whether enemy is alive</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.player.Player" title="entities.player.Player">entities.player.Player</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.enemy.Enemy.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decide what to do</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="#entities.player.Player" title="entities.player.Player"><em>Player</em></a>) – Player</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether player is alive after attack</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.inflict_damage">
+<code class="sig-name descname">inflict_damage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.player.Player" title="entities.player.Player">entities.player.Player</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.enemy.Enemy.inflict_damage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attack player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>player</strong> (<a class="reference internal" href="#entities.player.Player" title="entities.player.Player"><em>Player</em></a>) – Player</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether player is alive after attack</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.regenerate">
+<code class="sig-name descname">regenerate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.enemy.Enemy.regenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regenerate health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True - player is alive, no damage delt this time</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.shout">
+<code class="sig-name descname">shout</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.enemy.Enemy.shout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates random fight shouts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Battle shout</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.info">
+<code class="sig-name descname">info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.enemy.Enemy.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns basic info about Enemy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Information about enemy</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.enemy.Enemy.print_info">
+<code class="sig-name descname">print_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.Enemy.print_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints information about enemy</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-entities.equipment">
+<span id="entities-equipment"></span><h2>entities.equipment<a class="headerlink" href="#module-entities.equipment" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="entities.equipment.Item">
+<em class="property">class </em><code class="sig-prename descclassname">entities.equipment.</code><code class="sig-name descname">Item</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Item'</span></em>, <em class="sig-param"><span class="n">descritpiton</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Item - base class for pickups</p>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the item, defaults to ‘Item’</p></li>
+<li><p><strong>descritpiton</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the item, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.equipment.Item.name">
+<code class="sig-name descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.equipment.Item.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name of the item</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.description">
+<code class="sig-name descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.equipment.Item.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get description</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Item’s description</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.equipment.Item.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Item as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with item’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.print_info">
+<code class="sig-name descname">print_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Item.print_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print information about item</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.item_from_dict">
+<em class="property">static </em><code class="sig-name descname">item_from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><a class="headerlink" href="#entities.equipment.Item.item_from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Pickup instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with item’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Item from proper class</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">Item</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><a class="headerlink" href="#entities.equipment.Item.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Item instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with item’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Item</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">Item</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Item.get_item_class">
+<em class="property">static </em><code class="sig-name descname">get_item_class</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">class_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Item.get_item_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get class based on class name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>class_name</strong> (<em>str</em>) – Name of class</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Class with given name</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>class</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.equipment.Weapon">
+<em class="property">class </em><code class="sig-prename descclassname">entities.equipment.</code><code class="sig-name descname">Weapon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Weapon'</span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">base_strength</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em>, <em class="sig-param"><span class="n">random_strength</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Weapon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.equipment.Item</span></code></a></p>
+<p>Inherited attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the item, defaults to ‘Weapon’</p></li>
+<li><p><strong>descritpiton</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the item, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_strength</strong> (<em>int</em>) – Base strength of the weapon, defaults to 10</p></li>
+<li><p><strong>random_strength</strong> (<em>int</em>) – Random strength of the weapon, defaults to 10</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.equipment.Weapon.base_strength">
+<code class="sig-name descname">base_strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.equipment.Weapon.base_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get base strength</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of weapon’s base strength</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Weapon.random_strength">
+<code class="sig-name descname">random_strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.equipment.Weapon.random_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get random strength</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of weapon’s random strength</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Weapon.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.equipment.Weapon.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get weapon as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with weapon’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Weapon.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">entities.equipment.Weapon</a><a class="headerlink" href="#entities.equipment.Weapon.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Weapon instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with weapon’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Weapon loaded from dictionary</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">Weapon</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.equipment.Armor">
+<em class="property">class </em><code class="sig-prename descclassname">entities.equipment.</code><code class="sig-name descname">Armor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Armor'</span></em>, <em class="sig-param"><span class="n">descritpiton</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">defence</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Armor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.equipment.Item</span></code></a></p>
+<p>Inherited attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the item, defaults to ‘Armor’</p></li>
+<li><p><strong>descritpiton</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the item, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defence</strong> (<em>int</em>) – Value of armor’s defence in percentage, defaults to 0</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.equipment.Armor.defence">
+<code class="sig-name descname">defence</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.equipment.Armor.defence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get defence</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of armor’s defence in percentage</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Armor.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.equipment.Armor.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get armor as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with armor’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Armor.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">entities.equipment.Armor</a><a class="headerlink" href="#entities.equipment.Armor.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Armor instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with Armor’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Armor loaded from dictionary</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">Armor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.equipment.Key">
+<em class="property">class </em><code class="sig-prename descclassname">entities.equipment.</code><code class="sig-name descname">Key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Key'</span></em>, <em class="sig-param"><span class="n">descritpiton</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">location_filename</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.equipment.Item</span></code></a></p>
+<p>Inherited attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the item, defaults to ‘Key’</p></li>
+<li><p><strong>descritpiton</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the item, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>location_filename</strong> (<em>str</em>) – Location filename from config, defaults to None</p></li>
+<li><p><strong>level</strong> (<em>int</em>) – Number of level this key opens, defaults to 1</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.equipment.Key.location_filename">
+<code class="sig-name descname">location_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.equipment.Key.location_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get location filename</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>File name of location from config</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Key.level">
+<code class="sig-name descname">level</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.equipment.Key.level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get level</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Number of level this key opens</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Key.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Key.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get key as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with key’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Key.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">entities.equipment.Key</a><a class="headerlink" href="#entities.equipment.Key.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Key instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with Key’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Key loaded from dictionary</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">Key</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.equipment.Potion">
+<em class="property">class </em><code class="sig-prename descclassname">entities.equipment.</code><code class="sig-name descname">Potion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Health Potion'</span></em>, <em class="sig-param"><span class="n">descritpiton</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="n">health</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Potion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.equipment.Item</span></code></a></p>
+<p>Inherited attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the item, defaults to ‘Health Potion’</p></li>
+<li><p><strong>descritpiton</strong> (<em>str</em><em>, </em><em>optional</em>) – Description of the item, defaults to ‘’</p></li>
+</ul>
+</dd>
+</dl>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>health</strong> (<em>int</em>) – Health this potion regenerates, defaults to 100</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.equipment.Potion.health">
+<code class="sig-name descname">health</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.equipment.Potion.health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Health this potion regenerates</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Potion.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.equipment.Potion.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get potion as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with potion’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.equipment.Potion.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Potion" title="entities.equipment.Potion">entities.equipment.Potion</a><a class="headerlink" href="#entities.equipment.Potion.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Potion instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with Potion’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Potion loaded from dictionary</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Potion" title="entities.equipment.Potion">Potion</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-entities.player">
+<span id="entities-player"></span><h2>entities.player<a class="headerlink" href="#module-entities.player" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="entities.player.PlayerNameError">
+<em class="property">exception </em><code class="sig-prename descclassname">entities.player.</code><code class="sig-name descname">PlayerNameError</code><a class="headerlink" href="#entities.player.PlayerNameError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Indicates that given Player’s name was empty</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Exception</strong> (<em>Exception</em>) – Player’s name cannot be empty</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="entities.player.EquipmentSizeError">
+<em class="property">exception </em><code class="sig-prename descclassname">entities.player.</code><code class="sig-name descname">EquipmentSizeError</code><a class="headerlink" href="#entities.player.EquipmentSizeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+<p>Indicates that equipment size is too small to add another item</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ValueError</strong> (<em>ValueError</em>) – Equipment size is too small</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="entities.player.Player">
+<em class="property">class </em><code class="sig-prename descclassname">entities.player.</code><code class="sig-name descname">Player</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Nameless'</span></em>, <em class="sig-param"><span class="n">base_health</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">health</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">100</span></em>, <em class="sig-param"><span class="n">strength</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">10</span></em>, <em class="sig-param"><span class="n">weapon</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span><a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">entities.equipment.Weapon</a><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">armor</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span><a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">entities.equipment.Armor</a><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">equipment_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">equipment</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>List<span class="p">[</span><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Contains attributes:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Player’s name, defaults to ‘Nameless’</p></li>
+<li><p><strong>base_health</strong> (<em>int</em><em>, </em><em>optional</em>) – Base health of the player, defaults to 100</p></li>
+<li><p><strong>health</strong> (<em>int</em><em>, </em><em>optional</em>) – Current health of the player, defaults to 100</p></li>
+<li><p><strong>strength</strong> (<em>int</em><em>, </em><em>optional</em>) – Strength of the base attack, defaults to 10</p></li>
+<li><p><strong>weapon</strong> (<a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon"><em>Weapon</em></a><em>, </em><em>optional</em>) – Weapon - item that can increase player’s
+attack damage, defaults to None</p></li>
+<li><p><strong>armor</strong> (<a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor"><em>Armor</em></a><em>, </em><em>optional</em>) – Armor - item that reduces taken damage, defaults to None</p></li>
+<li><p><strong>equipment_size</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of slots int the equipment, defaults to 0</p></li>
+<li><p><strong>equipment</strong> (<em>List</em><em>[</em><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><em>Item</em></a><em>]</em><em>, </em><em>optional</em>) – List of items - current player’s equipment,
+defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="entities.player.Player.as_dict">
+<code class="sig-name descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.player.Player.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Player as a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with player’s data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.from_dict">
+<em class="property">static </em><code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.player.Player" title="entities.player.Player">entities.player.Player</a><a class="headerlink" href="#entities.player.Player.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get new Player instance loaded from dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionary</strong> (<em>Dict</em>) – Dictionary with Player’s data</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Loaded Player</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.player.Player" title="entities.player.Player">Player</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.name">
+<code class="sig-name descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.player.Player.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get player’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name of the player</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_name">
+<code class="sig-name descname">set_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Name of the player</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#entities.player.PlayerNameError" title="entities.player.PlayerNameError"><strong>PlayerNameError</strong></a> – Indicates that given name is empty</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.health">
+<code class="sig-name descname">health</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.player.Player.health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current player’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of player’s health</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_health">
+<code class="sig-name descname">set_health</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">health</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>health</strong> (<em>int</em>) – Value of player’s health</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given player’s health was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.base_health">
+<code class="sig-name descname">base_health</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.player.Player.base_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get player’s base value of health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Base value of player’s health</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_base_health">
+<code class="sig-name descname">set_base_health</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">base_health</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_base_health" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s base health value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>base_health</strong> (<em>int</em>) – Base value of player’s health</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given player’s health was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.strength">
+<code class="sig-name descname">strength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.player.Player.strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get base value of player’s strength</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of player’s strength</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_strength">
+<code class="sig-name descname">set_strength</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">strength</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_strength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set base value of player’s strength</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>strength</strong> (<em>int</em>) – Value of player’s strength</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given strength was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.weapon">
+<code class="sig-name descname">weapon</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">entities.equipment.Weapon</a><a class="headerlink" href="#entities.player.Player.weapon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get weapon - item that can increase player’s attack damage</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Player’s equipped weapon</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">Weapon</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_weapon">
+<code class="sig-name descname">set_weapon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">weapon</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">entities.equipment.Weapon</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_weapon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set weapon - item that can increase player’s attack damage</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>weapon</strong> (<a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon"><em>Weapon</em></a>) – Player’s weapon to equip</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.armor">
+<code class="sig-name descname">armor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">entities.equipment.Armor</a><a class="headerlink" href="#entities.player.Player.armor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get armor - item that can decrease player’s damage taken</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Player’s equipped armor</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">Armor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_armor">
+<code class="sig-name descname">set_armor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">armor</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">entities.equipment.Armor</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_armor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set armor - item that can decrease player’s damage taken</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>armor</strong> (<a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor"><em>Armor</em></a>) – Player’s armor to equip</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.equipment">
+<code class="sig-name descname">equipment</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><span class="p">]</span><a class="headerlink" href="#entities.player.Player.equipment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of player’s items from the equipment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of player’s items</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">Item</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_equipment">
+<code class="sig-name descname">set_equipment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">equipment</span><span class="p">:</span> <span class="n">List<span class="p">[</span><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_equipment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of player’s items as the equipment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>equipment</strong> (<em>List</em><em>[</em><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><em>Item</em></a><em>]</em>) – List of items</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – Indicates that in given list was found item
+that didn’t inherited from Item class</p></li>
+<li><p><a class="reference internal" href="#entities.player.EquipmentSizeError" title="entities.player.EquipmentSizeError"><strong>EquipmentSizeError</strong></a> – Indicates that player couldn’t
+handle such heavy equipment</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.equipment_size">
+<code class="sig-name descname">equipment_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#entities.player.Player.equipment_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get max size of the player’s equipment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Max equipment size</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.set_equipment_size">
+<code class="sig-name descname">set_equipment_size</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.set_equipment_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set max size of the player’s equipment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>size</strong> (<em>int</em>) – Max equipment size</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given size was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.take_damage">
+<code class="sig-name descname">take_damage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.player.Player.take_damage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that decreases player’s health by given amount</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>amount</strong> (<em>int</em>) – Amount of the damage given</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given amount was negative</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If player is alive</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.inflict_damage">
+<code class="sig-name descname">inflict_damage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enemy</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.player.Player.inflict_damage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that calculates the amount of damage player will
+deal to given enemy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enemy</strong> (<a class="reference internal" href="#entities.enemy.Enemy" title="entities.enemy.Enemy"><em>Enemy</em></a>) – Enemy from field player is standing on</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether enemy is alive</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.regenerate">
+<code class="sig-name descname">regenerate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.regenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that regenerates player’s healt by a given amount
+Player’s health cannot be greater than base health</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>amount</strong> (<em>int</em>) – Amount of health to regenerate</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Indicates that given amount was negative</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.use">
+<code class="sig-name descname">use</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.use" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that decides based on given item which action should be called</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>item</strong> (<a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><em>Item</em></a>) – Item from equipment</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Called method result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">Key</a>, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.drink">
+<code class="sig-name descname">drink</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">potion</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Potion" title="entities.equipment.Potion">entities.equipment.Potion</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.player.Player.drink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regenerate player’s health and remove potion from inventory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>potion</strong> (<a class="reference internal" href="#entities.equipment.Potion" title="entities.equipment.Potion"><em>Potion</em></a>) – Potion of health</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether potion was drunk or not</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.equip_weapon">
+<code class="sig-name descname">equip_weapon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">weapon</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon">entities.equipment.Weapon</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.equip_weapon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s weapon as a choosen one, old weapon hide to inventory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>weapon</strong> (<a class="reference internal" href="#entities.equipment.Weapon" title="entities.equipment.Weapon"><em>Weapon</em></a>) – Weapon to equip</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.equip_armor">
+<code class="sig-name descname">equip_armor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">armor</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor">entities.equipment.Armor</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.equip_armor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set player’s armor as a choosen one, old armor hide to inventory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>armor</strong> (<a class="reference internal" href="#entities.equipment.Armor" title="entities.equipment.Armor"><em>Armor</em></a>) – Armor to equip</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">entities.equipment.Key</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">entities.equipment.Key</a><a class="headerlink" href="#entities.player.Player.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return key used to open location on this field</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>key</strong> (<a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key"><em>Key</em></a>) – Key to new location</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Key to new location</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">Key</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.print_equipment">
+<code class="sig-name descname">print_equipment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.print_equipment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print player’s equipment as enumerated list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.pickup_item">
+<code class="sig-name descname">pickup_item</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a></span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#entities.player.Player.pickup_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add item to inventory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>item</strong> (<a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item"><em>Item</em></a>) – Item to add</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Whether item was added or inventory was full</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.drop_item">
+<code class="sig-name descname">drop_item</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">entities.equipment.Item</a><a class="headerlink" href="#entities.player.Player.drop_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove item chosen by user from inventory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Item player has chosen</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#entities.equipment.Item" title="entities.equipment.Item">Item</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.prepare_use">
+<code class="sig-name descname">prepare_use</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.prepare_use" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ask player which item he wants to use</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.search_for_key">
+<code class="sig-name descname">search_for_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">entities.equipment.Key</a><a class="headerlink" href="#entities.player.Player.search_for_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search inventory for approptiate key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>int</em>) – Level of the location key opens</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Key that opens given level</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#entities.equipment.Key" title="entities.equipment.Key">Key</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.available_methods">
+<code class="sig-name descname">available_methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#entities.player.Player.available_methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get player methods available to player during this round</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Dictionary with methods</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.print_info">
+<code class="sig-name descname">print_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.Player.print_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print information about player</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="entities.player.Player.info">
+<code class="sig-name descname">info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#entities.player.Player.info" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Player information</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="game.html" class="btn btn-neutral float-right" title="Game" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="modules.html" class="btn btn-neutral float-left" title="Text Adventure Game" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Bartłomiej Krawczyk.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

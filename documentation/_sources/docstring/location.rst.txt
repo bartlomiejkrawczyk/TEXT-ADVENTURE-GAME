@@ -1,0 +1,19 @@
+Location
+================
+
+
+location.field
+---------------------
+
+.. automodule:: location.field
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+location.location
+------------------------
+
+.. automodule:: location.location
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,20 @@
+{
+    "base_health": 100,
+    "health": 100,
+    "strength": 10,
+    "weapon":{
+        "class": "Weapon",
+        "name": "Wooden Sword",
+        "description": "Simple sword",
+        "base_strength": 1,
+        "random_strength": 5
+    },
+    "equipment_size": 10,
+    "equipment": [
+    {
+        "class": "Potion",
+        "name": "Health Potion",
+        "description": "",
+        "health": 100
+    }]
+}

@@ -38,7 +38,7 @@ def test_create_key():
     key = Key()
     assert key.name() == 'Key'
     assert key.description() == ''
-    assert key.location_filename() == None
+    assert key.location_filename() is None
     assert key.level() == 1
     key = Key('Red Key', 'Description', 'lvl2', 2)
     assert key.name() == 'Red Key'

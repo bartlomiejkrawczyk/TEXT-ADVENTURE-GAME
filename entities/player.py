@@ -194,6 +194,9 @@ class Player:
         """
         if health <= 0:
             raise ValueError("Player's Health cannot be negative")
+        if health > self._base_health:
+            raise ValueError(
+                "Player's Health cannot be greater than base health")
         self._health = health
 
     def base_health(self) -> int:

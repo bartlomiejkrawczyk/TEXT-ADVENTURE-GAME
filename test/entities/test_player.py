@@ -22,8 +22,8 @@ def test_create():
     assert player.health() == 100
     assert player.base_health() == 100
     assert player.strength() == 10
-    assert player.weapon() == None
-    assert player.armor() == None
+    assert player.weapon() is None
+    assert player.armor() is None
     assert player.equipment_size() == 0
     assert player.equipment() == []
     weapon = Weapon()
@@ -49,6 +49,8 @@ def test_create_invalid():
         _ = Player('')
     with pytest.raises(ValueError):
         _ = Player(health=0)
+    with pytest.raises(ValueError):
+        _ = Player(health=100, base_health=1)
     with pytest.raises(ValueError):
         _ = Player(base_health=0)
     with pytest.raises(EquipmentSizeError):
@@ -136,6 +138,80 @@ def test_inflict_damage(monkeypatch):
     assert enemy.health() == 950
 
 
+def test_regenerate():
+    player = Player(
+        'Knight',
+        200, 100
+    )
+    assert player == Player.from_dict({
+        'name': 'Knight',
+        'base_health': 200,
+        'health': 100,
+        'strength': 10,
+        'equipment_size': 0,
+        'equipment': []
+    })
+    player.regenerate(10)
+    assert player.health() == 110
+    player.regenerate(100)
+    assert player.health() == 200
+
+
+def test_use():
+    weapon = Weapon()
+    armor = Armor()
+    key = Key()
+    potion = Potion()
+    player = Player(
+        'Knight',
+        200,
+        100,
+        20,
+        equipment_size=100,
+        equipment=[key, potion, potion, weapon, armor]
+    )
+    assert player == Player.from_dict({
+        'name': 'Knight',
+        'base_health': 200,
+        'health': 100,
+        'strength': 20,
+        'equipment_size': 100,
+        'equipment': [
+            key.as_dict(),
+            potion.as_dict(),
+            potion.as_dict(),
+            weapon.as_dict(),
+            armor.as_dict()
+        ]
+    })
+    player.use(potion)
+    assert player.health() == 200
+    player.use(potion)
+    assert potion in player.equipment()
+    assert player.weapon() is None
+    player.use(weapon)
+    assert player.weapon() == weapon
+    assert weapon not in player.equipment()
+    assert player.armor() is None
+    player.use(armor)
+    assert player.armor() == armor
+    assert armor not in player.equipment()
+    assert key == player.use(key)
+
+
+def test_search_for_key():
+    key = Key()
+    player = Player(
+        'Knight',
+        200,
+        100,
+        20,
+        equipment_size=100,
+        equipment=[key]
+    )
+    assert key == player.search_for_key(1)
+
+
 def test_pickup_item():
     weapon = Weapon()
     armor = Armor()
@@ -146,5 +222,5 @@ def test_pickup_item():
     assert player.pickup_item(armor)
     assert player.pickup_item(key)
     assert player.pickup_item(potion)
-    assert player.pickup_item(weapon) == False
+    assert player.pickup_item(weapon) is False
     assert player.equipment() == [weapon, armor, key, potion]

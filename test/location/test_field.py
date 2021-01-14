@@ -1,6 +1,9 @@
-from location.field import Field
+from location.field import Field, GameOverError
 from entities.enemy import Enemy
-from entities.equipment import Item, Key, Potion, Weapon, Armor
+from entities.player import Player
+from entities.equipment import Item, Key
+
+import pytest
 
 
 def test_create():
@@ -9,13 +12,13 @@ def test_create():
     assert field.description() == ''
     assert str(field) == ''
     assert field.danger() == 0
-    assert field.enemy() == None
-    assert field.item() == None
-    assert field.enterable() == True
-    assert field.seen() == False
+    assert field.enemy() is None
+    assert field.item() is None
+    assert field.enterable() is True
+    assert field.seen() is False
     field.set_seen(True)
-    assert field.seen() == True
-    assert field.gate() == False
+    assert field.seen() is True
+    assert field.gate() is False
     assert field.go_to() == 0
 
     enemy = Enemy()
@@ -27,9 +30,9 @@ def test_create():
     assert field.danger() == -10
     assert field.enemy() == enemy
     assert field.item() == item
-    assert field.enterable() == True
-    assert field.seen() == True
-    assert field.gate() == True
+    assert field.enterable() is True
+    assert field.seen() is True
+    assert field.gate() is True
     assert field.go_to() == 1
 
 
@@ -94,3 +97,33 @@ def test_from_dict():
     }
     new_field = Field.from_dict(dictionary)
     assert new_field == field
+
+
+def test_pickup():
+    item = Item()
+    field = Field(item=item)
+    assert field.item() == item
+    player = Player(equipment_size=10)
+    field.pickup(player)
+    assert field.item() is None
+
+
+def test_attack():
+    enemy = Enemy(health=10)
+    field = Field(enemy=enemy)
+    player = Player(strength=9)
+    assert field.enemy() == enemy
+    assert field.attack(player)
+    assert field.attack(player) is False
+    assert field.enemy() is None
+
+
+def test_entrance():
+    field = Field(danger=-10, go_to='WIN')
+    player = Player(health=100)
+    with pytest.raises(GameOverError):
+        field.entrance(player)
+    field.set_go_to(0)
+    assert player.health() == 100
+    field.entrance(player)
+    assert player.health() == 90

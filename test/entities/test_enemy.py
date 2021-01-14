@@ -86,7 +86,7 @@ def test_is_alive():
     assert enemy.is_alive()
     enemy.take_damage(100)
     assert enemy.health() == 0
-    assert enemy.is_alive() == False
+    assert enemy.is_alive() is False
 
 
 def test_inflict_damage(monkeypatch):

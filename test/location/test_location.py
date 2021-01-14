@@ -14,7 +14,7 @@ def test_create():
     my_map = [[field]]
     location = Location(my_map, coordinates=(1, 1))
     assert location.field(1, 1) == field
-    assert location.field(0, 0).enterable() == False
+    assert location.field(0, 0).enterable() is False
     assert location.row() == 3
     assert location.column() == 3
 

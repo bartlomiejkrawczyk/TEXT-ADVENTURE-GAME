@@ -1,0 +1,231 @@
+{
+    "game": "test",
+    "player": {
+        "name": "Nameless",
+        "base_health": 100,
+        "health": 100,
+        "strength": 10,
+        "equipment_size": 0,
+        "equipment": []
+    },
+    "locations": [
+        {
+            "location": [
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Road",
+                        "description": "Simple Road",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 1,
+                        "enemy": {
+                            "name": "Monster",
+                            "base_health": 100,
+                            "health": 100,
+                            "regeneration": 10,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": ""
+                        },
+                        "item": {
+                            "class": "Key",
+                            "name": "Key",
+                            "description": "",
+                            "location_filename": null,
+                            "level": 1
+                        }
+                    },
+                    {
+                        "name": "",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 2
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ]
+            ],
+            "coordinates": [
+                1,
+                1
+            ],
+            "level": 1
+        },
+        {
+            "location": [
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 2
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ]
+            ],
+            "coordinates": [
+                1,
+                1
+            ],
+            "level": 2
+        }
+    ],
+    "level": 2
+}

@@ -100,8 +100,9 @@ Przykładowe gracz:
 13	0	0	0	0	12	12	12	12	10	10
 
 ```
+5. Podobnie można tworzyć kolejne lokalizacje należy je będzie nazwać tak jak nazwa podawana w przedmiocie - kluczu, który otwiera daną lokalizację
 
-5. Aby wprowadzić gracza w historię należy stworzyć dodatkowo plik introduction.txt, zawartość tego pliku będzie wyświetlona graczowi od razu po rozpoczęciu nowej gry
+6. Aby wprowadzić gracza w historię należy stworzyć dodatkowo plik introduction.txt, zawartość tego pliku będzie wyświetlona graczowi od razu po rozpoczęciu nowej gry
 
 # Graj
 
@@ -110,4 +111,4 @@ Przykładowe gracz:
 
 # Dokumentacja
 
-Resztę dokumentacji można znaleźć [tutaj](./documentation/index.html) lub w pośrednio można otworzyć ją poprzez plik index.html znajdujący się w folderze documentation
+Resztę dokumentacji można znaleźć [tutaj](./documentation/index.html) lub pośrednio można otworzyć ją w przeglądarce poprzez plik index.html znajdujący się w folderze documentation

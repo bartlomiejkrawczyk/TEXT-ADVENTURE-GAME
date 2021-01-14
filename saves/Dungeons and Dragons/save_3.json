@@ -1,0 +1,1719 @@
+{
+    "game": "Dungeons and Dragons",
+    "player": {
+        "name": "Knight",
+        "base_health": 100,
+        "health": 100,
+        "strength": 10,
+        "equipment_size": 10,
+        "equipment": [
+            {
+                "class": "Key",
+                "name": "Key to the Castle",
+                "description": "This key opens Castle's gate!",
+                "location_filename": "lvl2",
+                "level": 2
+            },
+            {
+                "class": "Potion",
+                "name": "Potion of Health",
+                "description": "Potion regenerates instantly 50 points of health!",
+                "health": 50
+            },
+            {
+                "class": "Potion",
+                "name": "Potion of Health",
+                "description": "Potion regenerates instantly 50 points of health!",
+                "health": 50
+            },
+            {
+                "class": "Potion",
+                "name": "Large Potion of Health",
+                "description": "Potion regenerates instantly 100 points of health!",
+                "health": 100
+            }
+        ],
+        "weapon": {
+            "class": "Weapon",
+            "name": "Excalibur",
+            "description": "It's base strength is equal to 50 :o",
+            "base_strength": 50,
+            "random_strength": 0
+        },
+        "armor": {
+            "class": "Armor",
+            "name": "Elder's Armor",
+            "description": "This armor will reduce your injuries by 30%",
+            "defence": 30
+        }
+    },
+    "locations": [
+        {
+            "location": [
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Hideout",
+                        "description": "The Hideout of the greatest trinket collector",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Untouched Village",
+                        "description": "This is a miracle this Village survived attacks from Dragons.\nI wonder what's their secret ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Angel",
+                            "base_health": 200,
+                            "health": 200,
+                            "regeneration": 0,
+                            "strength": 50,
+                            "random_strength": 100,
+                            "shouts": [
+                                "Better Run Away From Us!"
+                            ],
+                            "description": "The protector of Villagers"
+                        },
+                        "item": {
+                            "class": "Armor",
+                            "name": "Angel's Armor",
+                            "description": "This armor will reduce your injuries by 90%\nAm I seeing it right?",
+                            "defence": 90
+                        }
+                    },
+                    {
+                        "name": "Untouched Village",
+                        "description": "This is a miracle this Village survived attacks from Dragons.\nI wonder what's their secret ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Angel",
+                            "base_health": 200,
+                            "health": 200,
+                            "regeneration": 0,
+                            "strength": 50,
+                            "random_strength": 100,
+                            "shouts": [
+                                "Better Run Away From Us!"
+                            ],
+                            "description": "The protector of Villagers"
+                        },
+                        "item": {
+                            "class": "Armor",
+                            "name": "Angel's Armor",
+                            "description": "This armor will reduce your injuries by 90%\nAm I seeing it right?",
+                            "defence": 90
+                        }
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Small Dragon",
+                            "base_health": 50,
+                            "health": 50,
+                            "regeneration": 20,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": "Small Dragon is a social creature and usually it appropriates various trinkets!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Small Dragon",
+                            "base_health": 50,
+                            "health": 50,
+                            "regeneration": 20,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": "Small Dragon is a social creature and usually it appropriates various trinkets!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Untouched Village",
+                        "description": "This is a miracle this Village survived attacks from Dragons.\nI wonder what's their secret ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Angel",
+                            "base_health": 200,
+                            "health": 80,
+                            "regeneration": 0,
+                            "strength": 50,
+                            "random_strength": 100,
+                            "shouts": [
+                                "Better Run Away From Us!"
+                            ],
+                            "description": "The protector of Villagers"
+                        },
+                        "item": {
+                            "class": "Armor",
+                            "name": "Angel's Armor",
+                            "description": "This armor will reduce your injuries by 90%\nAm I seeing it right?",
+                            "defence": 90
+                        }
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Small Dragon",
+                            "base_health": 50,
+                            "health": 50,
+                            "regeneration": 20,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": "Small Dragon is a social creature and usually it appropriates various trinkets!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Small Dragon",
+                            "base_health": 50,
+                            "health": 50,
+                            "regeneration": 20,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": "Small Dragon is a social creature and usually it appropriates various trinkets!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Small Dragon",
+                            "base_health": 50,
+                            "health": 50,
+                            "regeneration": 20,
+                            "strength": 10,
+                            "random_strength": 10,
+                            "shouts": [
+                                "Die Trash!"
+                            ],
+                            "description": "Small Dragon is a social creature and usually it appropriates various trinkets!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Potion of Health",
+                            "description": "Potion regenerates instantly 50 points of health!",
+                            "health": 50
+                        }
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Lair of Dragons",
+                        "description": "An astonishingly large cluster of small dragons",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle's walls",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Crossroads",
+                        "description": "Welcome young traveler!\nYou are now at a crossroads, choose which way you want to go and start an unforgettable adventure!",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 1
+                    },
+                    {
+                        "name": "Paved Road",
+                        "description": "A road paved with stones.\nFor sure it leads to the castle ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Paved Road",
+                        "description": "A road paved with stones.\nFor sure it leads to the castle ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Paved Road",
+                        "description": "A road paved with stones.\nFor sure it leads to the castle ?!",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dangerous Paved Road",
+                        "description": "A road paved with stones.\nAnd what's behind this cart?\nIt's a Mighty White Dragon",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Mighty White Dragon",
+                            "base_health": 200,
+                            "health": 200,
+                            "regeneration": 50,
+                            "strength": 20,
+                            "random_strength": 20,
+                            "shouts": [
+                                "What a small little human!",
+                                "I eat people like you for breakfast!"
+                            ],
+                            "description": "Mighty White Dragon is a guardian of the Castle"
+                        },
+                        "item": {
+                            "class": "Weapon",
+                            "name": "King's Sword",
+                            "description": "It's base strength is equal to 25, but random buff is 100 :o",
+                            "base_strength": 25,
+                            "random_strength": 100
+                        }
+                    },
+                    {
+                        "name": "Castle Entrance",
+                        "description": "The castle is where the king and queen lived. \nNow only dragons are prowling here!",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 2
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle's walls",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Castle Garden",
+                        "description": "Green grass, flowers are blooming, \nbut in the distance you can hear the screams of blood-curdling dragons",
+                        "danger": 5,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Potion",
+                            "name": "Small Potion of Health",
+                            "description": "Potion regenerates instantly 30 points of health!",
+                            "health": 30
+                        }
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Castle Fence",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": 0,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Dangerous Dirt Road",
+                        "description": "Hardened ground leads to a village, for sure.",
+                        "danger": -5,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Burned Village",
+                        "description": "This village must have burned for a long time \nif smoke is still rising above it!",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "The Middle of The Forest",
+                        "description": "Legend has it that whoever extracts excalibur from the rock will become the Ruler in the future",
+                        "danger": 10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0,
+                        "item": {
+                            "class": "Weapon",
+                            "name": "Wooden Sword",
+                            "description": "Simple sword",
+                            "base_strength": 1,
+                            "random_strength": 5
+                        }
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Impassable Wilderness",
+                        "description": "",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Potato Field",
+                        "description": "This is an ordinary potato field",
+                        "danger": -1,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Burned Village",
+                        "description": "This village must have burned for a long time \nif smoke is still rising above it!",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": false,
+                        "go_to": 0,
+                        "enemy": {
+                            "name": "Weak Pink Dragon",
+                            "base_health": 50,
+                            "health": 10,
+                            "regeneration": 0,
+                            "strength": 2,
+                            "random_strength": 7,
+                            "shouts": [
+                                "Cough! Cough! Cough!..."
+                            ],
+                            "description": "He is SO... weak he must have something to heal myself!"
+                        },
+                        "item": {
+                            "class": "Potion",
+                            "name": "Large Potion of Health",
+                            "description": "Potion regenerates instantly 100 points of health!",
+                            "health": 100
+                        }
+                    },
+                    {
+                        "name": "Burned Village",
+                        "description": "This village must have burned for a long time \nif smoke is still rising above it!",
+                        "danger": -10,
+                        "enterable": true,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ],
+                [
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    },
+                    {
+                        "name": "Boarder",
+                        "description": "No one is able to go through me!",
+                        "danger": 0,
+                        "enterable": false,
+                        "seen": true,
+                        "go_to": 0
+                    }
+                ]
+            ],
+            "coordinates": [
+                11,
+                2
+            ],
+            "level": 1
+        }
+    ],
+    "level": 1
+}

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Welcome to Text Adventure Game’s documentation! &mdash; Text Adventure Game 1.0 documentation</title>
+  <title>Welcome to Text Adventure Game’s readme! &mdash; Text Adventure Game 1.0 documentation</title>
   
 
   
@@ -86,10 +86,28 @@
             
               <p class="caption"><span class="caption-text">Problem</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Welcome to Text Adventure Game’s documentation!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Welcome to Text Adventure Game’s readme!</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#informacje-o-projekcie">Informacje o projekcie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#zadanie">Zadanie</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#konfiguracja">Konfiguracja</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#funkcjonalnosci-krytyczne">Funkcjonalności Krytyczne</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gra-tekstowa">Gra tekstowa:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#konfiguracja">Konfiguracja:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zapis">Zapis:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#podstawowe-dzialanie-programu">Podstawowe działanie programu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#program-podzielony-jest-na-moduly">Program podzielony jest na moduły:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#glowne"><strong>Główne:</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#poboczne"><strong>Poboczne:</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="#graj">Graj</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">Konfiguracja</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">Zapis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#odczyt">Odczyt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#podsumowanie">Podsumowanie</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Docstring</span></p>
 <ul>
@@ -142,7 +160,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to Text Adventure Game’s documentation!</li>
+      <li><strong>Welcome to Text Adventure Game’s readme!</strong></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -161,104 +179,247 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-text-adventure-game-s-documentation">
-<h1>Welcome to Text Adventure Game’s documentation!<a class="headerlink" href="#welcome-to-text-adventure-game-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="welcome-to-text-adventure-game-s-readme">
+<h1><strong>Welcome to Text Adventure Game’s readme!</strong><a class="headerlink" href="#welcome-to-text-adventure-game-s-readme" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="informacje-o-projekcie">
+<h1>Informacje o projekcie<a class="headerlink" href="#informacje-o-projekcie" title="Permalink to this headline">¶</a></h1>
+<p><strong>Projekt:</strong> <em>Text Adventure Game</em></p>
+<p><strong>Twórca:</strong> <em>Bartłomiej Krawczyk</em></p>
+<p><strong>Przedmiot:</strong> <em>Podstawy Informatyki i Programowania</em></p>
 </div>
 <div class="section" id="zadanie">
 <h1>Zadanie<a class="headerlink" href="#zadanie" title="Permalink to this headline">¶</a></h1>
-<p>Jako zadanie dostałem do zrealizowania program, który pozwala:</p>
-<p>Zrealizować program pozwalający graczowi na poruszanie się po opisanej tekstem mapie, walkę z przeciwnikami, podnoszenie przedmiotów etc. (“text adventure game”).</p>
-<p>Gracz powinien wydawać polecenia tekstowo (np. “idę na północ”, albo “go west”, czy “attack goblin”, ale też “look around”). Na mapie powinny być przedmioty niezbędne do dostania się do innych obszarów świata (“klucze”), które gracz może jakoś zdobywać (“pickup key”, “buy gem”).</p>
-<p>Mapa powinna być wczytywalna z pliku, gdzie możliwa byłaby pełna konfiguracja świata: * rodzaje lokalizacji z ich opisem tekstowym, * sąsiedztwo (graf) lokalizacji (co jest “na północ”, czy “za mostem”), * przedmioty - ich położenie i wpływ na odblokowywanie lokalizacji, * przeciwnicy i ich siła itp.</p>
-<p>Rodzaje poleceń obsługiwanych przez grę powinny umożliwiać w miarę “naturalną” interakcję ze światem, ale mogą (a nawet muszą - ze względu na złożoność języka naturalnego) być ograniczone do określonego zestawu komend.</p>
+<p>Zrealizować program pozwalający graczowi na poruszanie się po opisanej
+tekstem mapie, walkę z przeciwnikami, podnoszenie przedmiotów etc.
+(“text adventure game”).</p>
+<p>Gracz powinien wydawać polecenia tekstowo (np. “idę na północ”, albo “go
+west”, czy “attack goblin”, ale też “look around”). Na mapie powinny być
+przedmioty niezbędne do dostania się do innych obszarów świata
+(“klucze”), które gracz może jakoś zdobywać (“pickup key”, “buy gem”).</p>
+<p>Mapa powinna być wczytywalna z pliku, gdzie możliwa byłaby pełna
+konfiguracja świata: _ rodzaje lokalizacji z ich opisem tekstowym, _
+sąsiedztwo (graf) lokalizacji (co jest “na północ”, czy “za mostem”), _
+przedmioty - ich położenie i wpływ na odblokowywanie lokalizacji, _
+przeciwnicy i ich siła itp.</p>
+<p>Rodzaje poleceń obsługiwanych przez grę powinny umożliwiać w miarę
+“naturalną” interakcję ze światem, ale mogą (a nawet muszą - ze względu
+na złożoność języka naturalnego) być ograniczone do określonego zestawu
+komend.</p>
 <p>Gracz powinien móc zapisać i odtworzyć stan gry.</p>
 </div>
+<div class="section" id="funkcjonalnosci-krytyczne">
+<h1>Funkcjonalności Krytyczne<a class="headerlink" href="#funkcjonalnosci-krytyczne" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="gra-tekstowa">
+<h2>Gra tekstowa:<a class="headerlink" href="#gra-tekstowa" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Poruszanie się gracza po mapie opisanej tekstem</p></li>
+<li><p>Program ma reagować na polecenia tekstowe - w każdym ruchu gracz ma
+wyświetlone dostępne aktualnie komendy</p></li>
+<li><p>Gracz ma dostęp do mapy - grafu lokalizacji</p></li>
+<li><p>Walka z przeciwnikami</p></li>
+<li><p>Podnoszenie przedmiotów</p></li>
+<li><p>Gracz ma możliwość używania przedmiotów:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">kluczy</span></code> - na polu z wejściem można użyć odpowiedniego klucza aby
+otworzyć nową lokalizację</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">broni</span></code> - włożenie broni w slot z bronią - zwiększa bazową siłę</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zbroi</span></code> - włożenie zbroi w slot ze zbroją - redukuje zadawane
+obrażenia</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eliksirów</span></code> - natychmiastowe leczenie</p></li>
+</ul>
+</div>
 <div class="section" id="konfiguracja">
-<h1>Konfiguracja<a class="headerlink" href="#konfiguracja" title="Permalink to this headline">¶</a></h1>
-<p>Aby dodać nową grę należy:</p>
-<ol class="arabic simple">
-<li><p>Stworzyć folder w folderze configuration - nazwa tego folderu będzie wykorzystana jako nazwa gry, wszystkie pliki konfiguracyjne należy umieścić w tym folderze</p></li>
-<li><p>Należy stworzyć plik player.json który będzie zawierał informację o graczu</p></li>
-</ol>
-<p>Przykładowe gracz:</p>
-<blockquote>
-<div><dl>
-<dt>{</dt><dd><p>“base_health”: 100,</p>
-<p>“health”: 100,</p>
-<p>“strength”: 10,</p>
-<p>“weapon”:{</p>
-<blockquote>
-<div><p>“class”: “Weapon”,</p>
-<p>“name”: “Wooden Sword”,</p>
-<p>“description”: “Simple sword”,</p>
-<p>“base_strength”: 1,</p>
-<p>“random_strength”: 5</p>
-</div></blockquote>
-<p>},</p>
-<p>“equipment_size”: 10,</p>
-<p>“equipment”: [
-{</p>
-<blockquote>
-<div><p>“class”: “Potion”,</p>
-<p>“name”: “Health Potion”,</p>
-<p>“description”: “”,</p>
-<p>“health”: 100</p>
-</div></blockquote>
-<p>}]</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
-<ol class="arabic" start="3">
-<li><p>Należy stworzyć plik fields.json który będzie zawierał listę pól na planszy, pola mają być opisane jsonem, tutaj też do pól należy przydzielić wrogów i przedmioty które można podnosić</p>
-<blockquote>
-<div><dl>
-<dt>[</dt><dd><dl>
-<dt>{</dt><dd><p>“name”: “Dangerous Paved Road”,</p>
-<p>“description”: “A road paved with stones.nAnd what’s behind this cart?nIt’s a Mighty White Dragon”,</p>
-<p>“danger”: -10,</p>
-<dl>
-<dt>“enemy”:{</dt><dd><p>“name”: “Mighty White Dragon”,</p>
-<p>“base_health”: 200,</p>
-<p>“health”: 200,</p>
-<p>“regeneration”: 50,</p>
-<p>“strength”: 20,</p>
-<p>“random_strength”: 20,</p>
-<p>“shouts”: [“What a small little human!”, “I eat people like you for breakfast!”],</p>
-<p>“description”: “Mighty White Dragon is a guardian of the Castle”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>“item”:{</p>
-<blockquote>
-<div><p>“class”: “Weapon”,</p>
-<p>“name”: “King’s Sword”,</p>
-<p>“description”: “It’s base strength is equal to 25, but random buff is 100 :o”,</p>
-<p>“base_strength”: 25,</p>
-<p>“random_strength”: 100</p>
-</div></blockquote>
-<p>},</p>
-<p>“enterable”: true,</p>
-<p>“seen”: false,</p>
-<p>“go_to”: 0</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
-<p>]</p>
-</div></blockquote>
-</li>
-<li><p>Należy stworzyć plik lvl1.txt w którym będą umieszczone indeksy pól z pliku fields.json, sąsiadujące pola mają być oddzielone tabami, całość ma mieć kształt prostokąta</p></li>
-<li><p>Aby wprowadzić gracza w historię należy stworzyć dodatkowo plik introduction.txt, zawartość tego pliku będzie wyświetlona graczowi od razu po rozpoczęciu nowej gry</p></li>
-</ol>
+<h2>Konfiguracja:<a class="headerlink" href="#konfiguracja" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Możliwa pełna konfiguracja świata</p></li>
+<li><p>Wczytywanie różnych lokalizacji, przedmiotów oraz wrogów</p></li>
+<li><p>Wczytywanie gracza</p></li>
+<li><p>Możliwość edycji historii gry z poziomu konfiguracji</p></li>
+<li><p>Możliwość dodawania własnych gier</p></li>
+</ul>
+</div>
+<div class="section" id="zapis">
+<h2>Zapis:<a class="headerlink" href="#zapis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Możliwość zapisu stanu gry</p></li>
+<li><p>Możliwość wczytania zapisanego stanu gry</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="podstawowe-dzialanie-programu">
+<h1>Podstawowe działanie programu<a class="headerlink" href="#podstawowe-dzialanie-programu" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="program-podzielony-jest-na-moduly">
+<h2>Program podzielony jest na moduły:<a class="headerlink" href="#program-podzielony-jest-na-moduly" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="glowne">
+<h3><strong>Główne:</strong><a class="headerlink" href="#glowne" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>`Main &lt;../main.py&gt;`__</strong> - główny moduł - inicjuje klasę
+<a class="reference external" href="../game.py">Game</a>, a następnie w pętli wywołuje jej metodę
+round().</p></li>
+<li><p><strong>`Game &lt;../game.py&gt;`__</strong> - główna klasa - śledzi stan gry - trzyma
+informacje o graczu oraz odwiedzonych przez niego lokalizacjach.</p></li>
+<li><p><strong>Location:</strong> - moduł odpowiadający za informacje o lokalizacji.</p></li>
+<li><p><strong>`Location &lt;../location/location.py&gt;`__</strong> - zawiera macierz pól danej
+lokalizacji.</p></li>
+<li><p><strong>`Field &lt;../location/field.py&gt;`__</strong> - zawiera informacje o danym
+polu, przedmiot na nim znajdujący się oraz wroga.</p></li>
+<li><p><strong>Entities:</strong> - moduł odpowiadający za postaci oraz przedmioty.</p></li>
+<li><p><strong>`Player &lt;../entities/player.py&gt;`__</strong> - klasa odpowiadająca za
+trzymanie informacji o graczu.</p></li>
+<li><p><strong>`Enemy &lt;../entities/enemy.py&gt;`__</strong> - klasa odpowiadająca za
+trzymanie informacji o wrogu.</p></li>
+<li><p><strong>`Equipment &lt;../entities/equipment.py&gt;`__</strong> - klasa odpowiadająca za
+trzymanie informacji o przedmiotach.</p></li>
+</ul>
+</div>
+<div class="section" id="poboczne">
+<h3><strong>Poboczne:</strong><a class="headerlink" href="#poboczne" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="../setup.py">Setup</a> - klasa poboczna - umożliwia wstępne
+zainicjowanie klasy game oraz wprowadzenie w historię gry.</p></li>
+<li><p>Utils:</p></li>
+<li><p><a class="reference external" href="../utils/format.py">Format</a> - funkcje do formatowania i
+wyświetlania ładnych ładnych wizualnie ozdób/przerywników.</p></li>
+<li><p><a class="reference external" href="../utils/io.py">IO</a> - zawiera metody do zapisu i odczytu plików z
+konfiguracji oraz zapisów.</p></li>
+<li><p><a class="reference external" href="../utils/player_input.py">Player Input</a> - zawiera metody któr będą
+wymagały inputu od gracza - zapętlają zapytanie dopóki nie dostaną
+poprawnego inputu od gracza.</p></li>
+</ul>
+</div>
+</div>
 </div>
 <div class="section" id="graj">
 <h1>Graj<a class="headerlink" href="#graj" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple">
-<li><p>Aby zagrać należy odpalić plik main.py</p></li>
-<li><p>Dalej zostanie się poprowadzonym przez program -&gt; cały czas będą wyświetlane dostępne dla gracza komendy</p></li>
+<li><p>Aby zagrać należy odpalić plik <a class="reference external" href="../main.py">main.py</a>.</p></li>
+<li><p>Dalej zostanie się poprowadzonym przez program -&gt; cały czas będą
+wyświetlane dostępne dla gracza komendy.</p></li>
+<li><p>Należy wybrać nową grę / załadować poprzedni zapis.</p></li>
+<li><p>Korzystając z dostępnych komend postarać się dostać do pola opisanego
+literą <code class="docutils literal notranslate"><span class="pre">G</span></code> - jest to pole, które jest bramą do kolejnej lokalizacji
+lub polem na którego wejście kończy grę.</p></li>
+<li><p>Rozgrywkę kończy użycie komendy <code class="docutils literal notranslate"><span class="pre">Exit</span></code> lub dotarcie do pola
+wygrywającego.</p></li>
 </ol>
+</div>
+<div class="section" id="id1">
+<h1>Konfiguracja<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Aby dodać nową grę należy:</p>
+<ol class="arabic simple">
+<li><p>Stworzyć folder w folderze configuration - nazwa tego folderu będzie
+wykorzystana jako nazwa gry, wszystkie pliki konfiguracyjne należy
+umieścić w tym folderze.</p></li>
+<li><p>Należy stworzyć plik player.json który będzie zawierał informację o
+graczu.</p></li>
+</ol>
+<p>Przykładowy gracz:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;base_health&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+  <span class="nt">&quot;health&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+  <span class="nt">&quot;strength&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="nt">&quot;weapon&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Wooden Sword&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Simple sword&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;base_strength&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;random_strength&quot;</span><span class="p">:</span> <span class="mi">5</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;equipment_size&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="nt">&quot;equipment&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Potion&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Health Potion&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;health&quot;</span><span class="p">:</span> <span class="mi">100</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Należy stworzyć plik fields.json który będzie zawierał listę pól na
+planszy, pola mają być opisane jsonem, tutaj też do pól należy
+przydzielić wrogów i przedmioty które można podnosić.</p></li>
+</ol>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Dangerous Paved Road&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A road paved with stones.\nAnd what&#39;s behind this cart?\nIt&#39;s a Mighty White Dragon&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;danger&quot;</span><span class="p">:</span> <span class="mi">-10</span><span class="p">,</span>
+    <span class="nt">&quot;enemy&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Mighty White Dragon&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;base_health&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+      <span class="nt">&quot;health&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+      <span class="nt">&quot;regeneration&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+      <span class="nt">&quot;strength&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+      <span class="nt">&quot;random_strength&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+      <span class="nt">&quot;shouts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;What a small little human!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;I eat people like you for breakfast!&quot;</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Mighty White Dragon is a guardian of the Castle&quot;</span>
+    <span class="p">},</span>
+
+    <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;King&#39;s Sword&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;It&#39;s base strength is equal to 25, but random buff is 100 :o&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;base_strength&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+      <span class="nt">&quot;random_strength&quot;</span><span class="p">:</span> <span class="mi">100</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;enterable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;seen&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;go_to&quot;</span><span class="p">:</span> <span class="mi">0</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Należy stworzyć plik lvl1.txt w którym będą umieszczone indeksy pól z
+pliku fields.json, sąsiadujące pola mają być oddzielone tabami,
+całość ma mieć kształt prostokąta.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">15</span>  <span class="mi">14</span>  <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">12</span>  <span class="mi">12</span>  <span class="mi">11</span>  <span class="mi">11</span>
+<span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">11</span>
+<span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>
+<span class="mi">0</span>   <span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>
+<span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">14</span>  <span class="mi">14</span>  <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">5</span>
+<span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">2</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>
+<span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">5</span>
+<span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>   <span class="mi">7</span>
+<span class="mi">8</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>   <span class="mi">6</span>
+<span class="mi">8</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">8</span>   <span class="mi">9</span>   <span class="mi">10</span>
+<span class="mi">13</span>  <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">12</span>  <span class="mi">12</span>  <span class="mi">12</span>  <span class="mi">12</span>  <span class="mi">10</span>  <span class="mi">10</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Podobnie można tworzyć kolejne lokalizacje należy je będzie nazwać
+tak jak nazwa podawana w przedmiocie - kluczu, który otwiera daną
+lokalizację.</p></li>
+<li><p>Aby wprowadzić gracza w historię należy stworzyć dodatkowo plik
+introduction.txt, zawartość tego pliku będzie wyświetlona graczowi od
+razu po rozpoczęciu nowej gry.</p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h1>Zapis<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<p>W trakcie gry gdy gracz znajduje się poza walką ma możliwość zapisania
+stanu gry.</p>
+<p>Należy użyć komendy <code class="docutils literal notranslate"><span class="pre">Save</span></code>, a następnie podać nazwę pliku pod jaką ma
+zostać zapisany postęp. Gra zapisywana jest w formanie json.</p>
+</div>
+<div class="section" id="odczyt">
+<h1>Odczyt<a class="headerlink" href="#odczyt" title="Permalink to this headline">¶</a></h1>
+<p>Aby odczytać zapis należy uruchomić program na nowo i wybrać opcję
+<code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">from</span> <span class="pre">file</span></code>.</p>
+<p>Następnie wskazać numer wybranego pliku z zapisanym postępem.</p>
+</div>
+<div class="section" id="podsumowanie">
+<h1>Podsumowanie<a class="headerlink" href="#podsumowanie" title="Permalink to this headline">¶</a></h1>
+<p>Wydaje mi się, że wszystkie założenia zadania udało mi się wypełnić.</p>
+<p>Jestem zadowolony z efektów jakie osiągnąłem, oraz z ciekawej historii
+jaką udało mi się przekazać w grze <code class="docutils literal notranslate"><span class="pre">Dungeons</span> <span class="pre">and</span> <span class="pre">Dragons</span></code>.</p>
 </div>
 
 
